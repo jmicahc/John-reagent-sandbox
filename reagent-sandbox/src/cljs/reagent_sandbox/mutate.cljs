@@ -1,0 +1,13 @@
+(ns reagent-sandbox.mutate
+  (:require-macros [cljs.core.async.macros :refer [go go-loop]]
+                   [cljs.pprint :refer [pp]])
+  (:require [reagent.core :as reagent]
+            [reagent-sandbox.data :as data
+             :refer [mutate-chan debounced-mutate
+                     debounce-interval]]
+            [cljs.pprint :refer [pprint]]
+            [cljs.core.async :as async :refer
+             [mult timeout put! <! >! pipe]]))
+
+
+(defn g-upddate [g])

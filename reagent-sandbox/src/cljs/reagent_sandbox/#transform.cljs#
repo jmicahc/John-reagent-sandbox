@@ -1,0 +1,9 @@
+(ns reagent-sandbox.data
+  (:require [reagent.core :as reagent]
+            [cljs.core.async :as async :refer
+             [chan dropping-buffer]]))
+
+
+;; Adds
+(defn conjoin [{:keys [event] :as node}]
+  {event #(g/update (first ))})
